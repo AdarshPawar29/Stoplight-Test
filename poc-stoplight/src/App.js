@@ -1,7 +1,8 @@
 import React from "react";
 
 import { StoplightProject } from "@stoplight/elements-dev-portal";
-import "@stoplight/elements-dev-portal/styles.min.css";
+// import "@stoplight/elements-dev-portal/styles.min.css";
+import "./App.css";
 
 function App() {
   return (
