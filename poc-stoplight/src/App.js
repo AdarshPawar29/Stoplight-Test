@@ -1,16 +1,28 @@
 import React from "react";
-
-import { StoplightProject } from "@stoplight/elements-dev-portal";
-// import "@stoplight/elements-dev-portal/styles.min.css";
+import { Route, Switch, Redirect } from "react-router-dom";
+import StoplightProjectDoc from "./components/StoplightProjectDoc";
+import { Navigation } from "./components/Navigation";
 import "./App.css";
+import * as Sentry from "@sentry/react";
 
 function App() {
   return (
-    <div className="App">
+    <Sentry.ErrorBoundary fallback={<p>An error has occurred</p>}>
       <div className="App">
-        <StoplightProject projectId="cHJqOjgzMTk3" />
+        <header>
+          <Navigation />
+        </header>
+        <main className="main-content">
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/stoplight-project" />
+            </Route>
+            <Route path="/about" render={() => <>hello</>} />
+            <Route path="/stoplight-project" component={StoplightProjectDoc} />
+          </Switch>
+        </main>
       </div>
-    </div>
+    </Sentry.ErrorBoundary>
   );
 }
 

@@ -139,6 +139,27 @@ iframe {
     transition-duration: 0.01ms !important;
   }
 }
+
+.TryItPanel .token.property,
+.TryItPanel + div .token.property {
+  color: rgb(128, 203, 196) !important;
+}
+
+.TryItPanel .token.string,
+.TryItPanel + div .token.string {
+  color: rgb(165, 214, 255) !important;
+}
+
+.TryItPanel .token.boolean,
+.TryItPanel + div .token.boolean {
+  color: rgb(121, 192, 255) !important;
+}
+
+.TryItPanel .token.punctuation,
+.TryItPanel + div .token.punctuation {
+  color: #dbdbdb !important;
+}
+
 .sl-content-center {
   align-content: center;
 }

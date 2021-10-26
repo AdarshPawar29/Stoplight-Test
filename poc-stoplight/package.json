@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/react": "6.8.0",
+    "@sentry/tracing": "6.8.0",
     "@spscommerce/ds-colors": "^4.1.0",
     "@spscommerce/ds-react": "^4.1.0",
     "@spscommerce/ds-shared": "^4.1.0",
@@ -30,6 +32,8 @@
     "react": "^16.9.0",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^16.9.0",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
     "react-scripts": "4.0.3",
     "scroll-into-view-if-needed": "^2.2.20",
     "swagger-parser": "^10.0.3",
